@@ -38,6 +38,10 @@ nav {
     .headingTop h1 {
         font-size: 10px;
     }
+
+    a.navbar-brand {
+        margin: 0 !important;
+    }
 }
 
 .navbar-nav {
