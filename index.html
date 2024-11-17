@@ -67,6 +67,70 @@
                                 <li><a class="dropdown-item" href="#">Verification Of Particulars</a></li>
                                 <li><a class="dropdown-item" href="#">Load Certificate Form</a></li>
                                 <li><a class="dropdown-item" href="#">Upload Scanned Certificate</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button">
+                                        Download
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">OAU Road Map</a></li>
+                                        <li><a class="dropdown-item" href="#">University Examination Regulations</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Library Information</a></li>
+                                        <li><a class="dropdown-item" href="#">Sport Regulations</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Admission Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Activate Late Registration
+                                Payment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Update Biodata Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Register Courses </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Complete Health Centre Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> View Semester Raw Score</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Messages</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Bedspace Request
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Information On Accomdation</a></li>
+                                <li><a class="dropdown-item" href="#">All Fresher BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Final Year BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Part 2 BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Part 3 BedSpace Request</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Reports
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Basic Rules/Regulations in Halls of Residence</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Accomdation Aggrement Form</a></li>
+                                <li><a class="dropdown-item" href="#">BedSpace Clerance</a></li>
+                                <li><a class="dropdown-item" href="#">Course Registration</a></li>
+                                <li><a class="dropdown-item" href="#">Clearance Certificate </a></li>
                             </ul>
                         </li>
                     </ul>
@@ -79,6 +143,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select all dropdown-submenu items
+            const submenus = document.querySelectorAll('.dropdown-submenu');
+
+            submenus.forEach(function (submenu) {
+                const toggleLink = submenu.querySelector('.dropdown-toggle');
+
+                // Add a click event listener to the dropdown-toggle links
+                toggleLink.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    const dropdownMenu = submenu.querySelector('.dropdown-menu');
+
+                    // Toggle the "show" class on the submenu
+                    const isVisible = dropdownMenu.classList.contains('show');
+                    dropdownMenu.classList.toggle('show', !isVisible);
+
+                    // Close other submenus if open
+                    submenus.forEach(function (otherSubmenu) {
+                        if (otherSubmenu !== submenu) {
+                            const otherMenu = otherSubmenu.querySelector('.dropdown-menu');
+                            otherMenu.classList.remove('show');
+                        }
+                    });
+
+                    // Prevent propagation to parent dropdown
+                    e.stopPropagation();
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', function () {
+                submenus.forEach(function (submenu) {
+                    const dropdownMenu = submenu.querySelector('.dropdown-menu');
+                    dropdownMenu.classList.remove('show');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
