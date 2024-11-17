@@ -106,8 +106,8 @@ div.main-container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     animation: blink 1s infinite;
 }
