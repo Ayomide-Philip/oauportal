@@ -52,7 +52,7 @@ div.main-container {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 321px) {
     .headingTop h1 {
         font-size: 7px;
     }
