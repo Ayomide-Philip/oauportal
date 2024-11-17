@@ -84,6 +84,8 @@ div.main-container {
     align-items: center;
     height: 100vh;
     background-color: #adadad;
+    position: fixed;
+    width: 100%;
 }
 
 /* Spinner wrapper */
@@ -139,4 +141,39 @@ div.main-container {
     50% {
         opacity: 0;
     }
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.profile-body {
+    width: 90%;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+    /* Optional: space between the image and the text */
+}
+
+.text-left {
+    float: left;
+    width: calc(100% - 200px);
+    /* Optional: adjust if needed to give space for the image */
+}
+
+div.profile-body>img {
+    width: 200px;
+    height: 200px;
 }
