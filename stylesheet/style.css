@@ -128,11 +128,9 @@ div.main-container {
     0%,
     100% {
         opacity: 1;
-        /* Fully visible */
     }
 
     50% {
         opacity: 0;
-        /* Fully transparent */
     }
 }
