@@ -45,7 +45,6 @@ div.main-container {
 @media (max-width: 376px) {
     .headingTop h1 {
         font-size: 10px;
-        padding: 5px;
     }
 
     a.navbar-brand {
@@ -56,10 +55,6 @@ div.main-container {
 @media (max-width: 321px) {
     .headingTop h1 {
         font-size: 7px;
-        max-width: 400px;
-        width: 100%;
-        word-wrap: break-word;
-        padding: 10px;
     }
 }
 
