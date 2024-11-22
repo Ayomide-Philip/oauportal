@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', function () {
     // Select all dropdown-submenu items
     const submenus = document.querySelectorAll('.dropdown-submenu');
