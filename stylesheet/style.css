@@ -136,9 +136,18 @@ div.profile-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
+}
+
+div.profile-item>div>div {
+    display: flex;
 }
 
 @media (max-width: 768px) {
+    div.profile-body {
+        width: 100%;
+    }
+
     .headingTop h1 {
         font-size: 1rem;
     }
