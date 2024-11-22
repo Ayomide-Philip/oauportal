@@ -143,6 +143,15 @@ div.profile-body>div.profile-picture>img {
     border-radius: 10px;
 }
 
+div.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+div.profile>div {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .headingTop h1 {
         font-size: 1rem;
