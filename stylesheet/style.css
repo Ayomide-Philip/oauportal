@@ -153,7 +153,15 @@ div.profile {
 div.profile>div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
+}
+
+div.profile>div>h4 {
+    font-size: larger;
+    font-family: "Parkinsans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 @media (max-width: 768px) {
