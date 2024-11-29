@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obafemi Awolowo University</title>
+    <link rel="stylesheet" href="./stylesheet/bootstrap.min.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./stylesheet/hrsstudentupdate.css">
+    <link rel="shortcut icon" href="./images/oaulogo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar  fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/oaulogo.png" alt="Logo" width="100" height="100"
+                    class="d-inline-block align-text-top">
+            </a>
+            <div class="headingTop">
+                <h1 class="display-6">OAU Student Information Portal</h1>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Profile Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <div>
+                                <img src="./images/profile-svgrepo-com.svg" alt="person-image">
+                                <h5>Lorem, ipsum dolor.</h5>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Profile Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Health Center Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Teaching Assignment</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Payment Activities
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Payment Via Remita</a></li>
+                                <li><a class="dropdown-item" href="#">View Payment Status</a></li>
+                                <li><a class="dropdown-item" href="#">Download Payment Slip from Cash Office</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Complete Certificate Form</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Online Screening
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Upload Picture</a></li>
+                                <li><a class="dropdown-item" href="#">Upload Signature</a></li>
+                                <li><a class="dropdown-item" href="#">Verification Of Particulars</a></li>
+                                <li><a class="dropdown-item" href="#">Load Certificate Form</a></li>
+                                <li><a class="dropdown-item" href="#">Upload Scanned Certificate</a></li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button">
+                                        Download
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">OAU Road Map</a></li>
+                                        <li><a class="dropdown-item" href="#">University Examination Regulations</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Library Information</a></li>
+                                        <li><a class="dropdown-item" href="#">Sport Regulations</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Admission Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Activate Late Registration
+                                Payment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Update Biodata Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> Register Courses </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Complete Health Centre Form</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"> View Semester Raw Score</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check Messages</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Bedspace Request
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Information On Accomdation</a></li>
+                                <li><a class="dropdown-item" href="#">All Fresher BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Final Year BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Part 2 BedSpace Request</a></li>
+                                <li><a class="dropdown-item" href="#">Part 3 BedSpace Request</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Reports
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Basic Rules/Regulations in Halls of Residence</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Accomdation Aggrement Form</a></li>
+                                <li><a class="dropdown-item" href="#">BedSpace Clerance</a></li>
+                                <li><a class="dropdown-item" href="#">Course Registration</a></li>
+                                <li><a class="dropdown-item" href="#">Clearance Certificate </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Print ICT Certificate</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Documentations
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://eportal.oauife.edu.ng/info2018_2019.pdf">Registration Information
+                                        and Fees Breakdown</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Councellor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Change Password</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="content-container">
+            <div class="form">
+                <div class="form-container">
+                    <div class="logo">
+                        <div class="logo-image">
+                            <img src="./images/oaulogo.png" alt="school_logo">
+                        </div>
+                        <div class="logo-heading">
+                            <h1>STUDENT MEDICAL ENTRANCE FORM</h1>
+                        </div>
+                    </div>
+                    <form action="">
+
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="fName">First Name:</label>
+                                    <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="lName">Last Name:</label>
+                                    <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="oName">Middle Name:</label>
+                                    <input type="text" name="oName" id="oName" placeholder="Middle Name(Optional)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="homeAddress">Home Address:</label>
+                            <input type="text" name="homeAddress" id="homeAddress" placeholder="Permanent Home Address"
+                                required>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="sex">Gender:</label>
+                                    <div class="radio">
+                                        <input type="radio" name="gender" id="Male" value="Male"> Male
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="gender" id="female" value="Female"> Female
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="dob">Date Of Birth:</label>
+                                    <input type="text" id="birthdate" name="birthdate"
+                                        placeholder="Select your birthdate">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="sex">Age:</label>
+                                    <input type="number" name="age" id="age" placeholder="Input your Age" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="lga">Local Government:</label>
+                                    <input type="text" name="lga" id="lga" placeholder="Local Government" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="state">State of Origin:</label>
+                                    <input type="text" name="state" id="state" placeholder="State of Origin" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="oName">Nationality:</label>
+                                    <input type="text" name="nationality" id="nationality" placeholder="Nationality"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="religion">Religion:</label>
+                                    <input type="text" name="religion" id="religion" placeholder="Religion" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="state">Denomination:</label>
+                                    <input type="text" name="denomination" id="denomination" placeholder="Denomination"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="schoolAttended">Last School Attended:</label>
+                            <input type="text" name="schoolAttended" id="schoolAttended"
+                                placeholder="Input the School you have attended." required>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="lastClass">Last Class Passed:</label>
+                                    <input type="text" name="lastClass" id="lastClass" placeholder="Last Class Passed"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="currentClass">Current Class:</label>
+                                    <select id="lastClass" name="lastClass">
+                                        <option value="JSS1">JSS1</option>
+                                        <option value="JSS2">JSS2</option>
+                                        <option value="SSS1">SSS1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Parent Information:</h3>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="fatherName">Father Name:</label>
+                                    <input type="text" name="fatherName" id="fatherName" placeholder="Father Name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="fatherOccupation">Father Occupation:</label>
+                                    <input type="text" name="fatherOccupation" id="fatherOccupation"
+                                        placeholder="Father Occupation" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="motherName">Mother Name:</label>
+                                    <input type="text" name="motherName" id="motherName" placeholder="Mother Name"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="motherOccupation">Mother Occupation:</label>
+                                    <input type="text" name="motherOccupation" id="motherOccupation"
+                                        placeholder="Mother Occupation" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="emailAddress">Email Address:</label>
+                            <input type="text" name="emailAddress" id="emailAddress"
+                                placeholder="Input your Email Address" required>
+                        </div>
+                        <div class="input">
+                            <div class="item">
+                                <div class="input">
+                                    <label for="fatherNumber">Father Telephone:</label>
+                                    <input type="number" name="fatherNumber" id="fatherNumber"
+                                        placeholder="Father Telephone" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="motherNumber">Mother Telephone:</label>
+                                    <input type="number" name="motherNumber" id="motherNumber"
+                                        placeholder="Mother Telephone" required>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="input">
+                                    <label for="guidanNumber">Guidan Telephone:</label>
+                                    <input type="number" name="guidanNumber" id="guidanNumber"
+                                        placeholder="Guidan Telephone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="parentAddress">Parent Contact:</label>
+                            <input type="text" name="parentAddress" id="parentAddress"
+                                placeholder="Parent Contact Address" required>
+                        </div>
+                        <div class="input">
+                            <textarea name="moreInformation" id="moreInfo" cols="30" rows="10"
+                                placeholder="Input more information that you will need the school to know about you"></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
