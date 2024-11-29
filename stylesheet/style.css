@@ -184,7 +184,7 @@ div.profile>div>h4.profile-heading {
         margin-top: 80px;
     }
 
-    div.profile-body img {
+    div.profile-body>div.profile-picture>img {
         width: 150px;
         height: 150px;
     }
@@ -195,9 +195,17 @@ div.profile>div>h4.profile-heading {
         font-size: 15px;
     }
 
-    div.profile-body img {
+    div.profile-body>div.profile-picture>img {
         width: 100px;
         height: 100px;
+    }
+
+    div.profile>div>h4 {
+        font-size: smaller;
+        font-family: "Parkinsans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bolder;
+        font-style: normal
     }
 }
 
@@ -215,4 +223,30 @@ div.profile>div>h4.profile-heading {
     .headingTop h1 {
         font-size: 12px;
     }
+}
+
+footer {
+    background-color: black;
+    padding: 1%;
+    width: 100%;
+    color: white;
+    font-size: smaller;
+}
+
+div.footer {
+    display: flex;
+}
+
+div.footer>div {
+    display: flex;
+    width: 100%;
+}
+
+div.footer>div>div {
+    margin-left: 20px;
+}
+
+
+div.footer>div p {
+    margin-bottom: 0.2rem;
 }
