@@ -9,7 +9,9 @@ div.content-container {
     align-items: center;
     padding: 2%;
     width: 100%;
-    background-color: wheat;
+    background-image: url("../images/healtcarebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div.form>div.form-container>form>div.input input[type="text"],
